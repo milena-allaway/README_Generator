@@ -23,7 +23,7 @@ Answer the questions when prompted
 ## Credits
 
 ## License
-    This project is licensed under the MIT License. Click link for more information https://opensource.org/licenses/MIT
+    This project is licensed under the MIT License. [Click for more info](https://opensource.org/licenses/MIT)
 
 ## Contributing
 N/A none at this time
