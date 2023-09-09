@@ -2,7 +2,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 ## Description
-This is an app that quicly and easily creates a README.md file based on user input.
+This is an app that quickly and easily creates a README.md file based on user input.
 
 ## Table of Contents
 
@@ -23,7 +23,8 @@ Answer the questions when prompted
 ## Credits
 
 ## License
-    This project is licensed under the MIT License. [Click for more info](https://opensource.org/licenses/MIT)
+  This project is licensed under the MIT License. 
+  https://opensource.org/licenses/MIT
 
 ## Contributing
 N/A none at this time
