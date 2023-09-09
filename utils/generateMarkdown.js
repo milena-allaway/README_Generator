@@ -70,61 +70,51 @@ function renderLicenseSection(license) {
       return ``;
     } else {
       return `## License
-  
-      This project is licensed under the ${license} License. Click link for more information ${renderLicenseLink(license)}`;
+    This project is licensed under the ${license} License. Click link for more information ${renderLicenseLink(license)}`;
   };
 };
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
-  return `
-    # ${data.title}
-    ${renderLicenseBadge(data.license)}
+  return `# ${data.title}
+${renderLicenseBadge(data.license)}
   
-    ## Description
+## Description
+${data.description}
 
-    ${data.description}
+## Table of Contents
 
-    ## Table of Contents
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Credits](#Credits)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Credits](#Credits)
-    - [License](#License)
-    - [Contributing](#Contributing)
-    - [Tests](#Tests)
-    - [Questions](#Questions)
+## Installation
+${data.installation}
 
-    ## Installation
+## Usage
+${data.usage}
 
-    ${data.installation}
+## Credits
 
-    ## Usage
+${renderLicenseSection(data.license)}
 
-    ${data.usage}
+## Contributing
+${data.contributing}
 
-    ## Credits
+## Tests
+${data.tests}
 
-    ${renderLicenseSection(data.license)}
+## Questions
+For any questions or feedback, please contact me via:
+- GitHub: [${data.username}](https://github.com/${data.username})
+- Email: [${data.email}](mailto:${data.email})
 
-    ## Contributing
-
-    ${data.contributing}
-
-    ## Tests
-
-    ${data.tests}
-
-    ## Questions
-
-    For any questions or feedback, please contact me via:
-
-    - GitHub: [${data.username}](https://github.com/${data.username})
-    - Email: [${data.email}](mailto:${data.email})
-
-
-    This README was generated with ❤️ by README_Generator`;
+This README was generated with ❤️ by README_Generator`;
 };
 
 module.exports = generateMarkdown;
