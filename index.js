@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -28,7 +29,19 @@ const questions = [
         type:  'list',
         name: 'license',
         message: 'Please select a license for your project.',
-        choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None'],
+        choices: 
+            ['MIT', 
+            'Apache', 
+            'GPLv3',
+            'GPLv2', 
+            'BSD2', 
+            'BSD3', 
+            'Eclipse', 
+            'Mozilla',
+            'IBM',
+            'Perl',
+            'Artistic', 
+            'None'],
     },
     {
         type: 'input',
@@ -56,17 +69,18 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, JSON.stringify(data), (err) =>
-        err ? console.error(err) : console.log('README Created!')
+        err ? console.error('Error creating README: ', err) : console.log('README Created!')
     );
 };
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((answers) => {
-        console.log(answers);
-        writeToFile('README.md', answers);
-    });
-}
+    inquirer.prompt(questions).then((data) => {
+        const dataMarkdown = generateMarkdown(data);
+        writeToFile('README.md', dataMarkdown);
+    })
+    .catch((err) => console.error('Something went wrong: Error ', err));
+};
 
 // Function call to initialize app
 init();
