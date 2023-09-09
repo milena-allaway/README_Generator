@@ -71,60 +71,60 @@ function renderLicenseSection(license) {
     } else {
       return `## License
   
-      This project is licensed under the ${license} License.`;
+      This project is licensed under the ${license} License. Click link for more information ${renderLicenseLink(license)}`;
   };
 };
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
-  return `# ${data.title}
-
-  ${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
+  return `
+    # ${data.title}
+    ${renderLicenseBadge(data.license)}
   
-  ## Description
+    ## Description
 
-  ${data.description}
+    ${data.description}
 
-  ## Table of Contents
+    ## Table of Contents
 
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Credits](#Credits)
-  - [License](#License)
-  - [Contributing](#Contributing)
-  - [Tests](#Tests)
-  - [Questions](#Questions)
+    - [Installation](#Installation)
+    - [Usage](#Usage)
+    - [Credits](#Credits)
+    - [License](#License)
+    - [Contributing](#Contributing)
+    - [Tests](#Tests)
+    - [Questions](#Questions)
 
-  ## Installation
+    ## Installation
 
-  ${data.installation}
+    ${data.installation}
 
-  ## Usage
+    ## Usage
 
-  ${data.usage}
+    ${data.usage}
 
-  ## Credits
+    ## Credits
 
-  ${renderLicenseSection(data.license)}
+    ${renderLicenseSection(data.license)}
 
-  ## Contributing
+    ## Contributing
 
-  ${data.contributing}
+    ${data.contributing}
 
-  ## Tests
+    ## Tests
 
-  ${data.tests}
+    ${data.tests}
 
-  ## Questions
+    ## Questions
 
-  For any questions or feedback, please contact me via:
+    For any questions or feedback, please contact me via:
 
-  - GitHub: [${data.username}](https://github.com/${data.username})
-  - Email: [${data.email}](mailto:${data.email})
+    - GitHub: [${data.username}](https://github.com/${data.username})
+    - Email: [${data.email}](mailto:${data.email})
 
 
-  This README was generated with ❤️ by README_Generator`;
+    This README was generated with ❤️ by README_Generator`;
 };
 
 module.exports = generateMarkdown;
