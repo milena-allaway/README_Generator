@@ -16,11 +16,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'tableOfContents',
-        message: 'Please provide a table of contents for your project.',
-    },
-    {
-        type: 'input',
         name: 'installation',
         message: 'Please provide installation instructions for your project.',
     },
@@ -47,8 +42,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'Please provide contact information for questions about your project.',
+        name: 'username',
+        message: 'What is your GitHub username?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
     },
     
 ];
@@ -56,7 +56,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, JSON.stringify(data), (err) =>
-        err ? console.error(err) : console.log('Success!')
+        err ? console.error(err) : console.log('README Created!')
     );
 };
 
