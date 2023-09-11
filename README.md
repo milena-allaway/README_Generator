@@ -2,7 +2,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 ## Description
-This is an app that quickly and easily creates a README.md file based on user input.
+This is an app to quickly and easily generate a README file based on user input.
 
 ## Table of Contents
 
@@ -15,22 +15,28 @@ This is an app that quickly and easily creates a README.md file based on user in
 - [Questions](#Questions)
 
 ## Installation
-Make sure you have Node.js installed. Clone this repo to your local device. Install Inquirer package from NPM.
+Make sure Node.js is installed on your computer. Clone the repo with this file. Install the Inquirer package from NPM
 
 ## Usage
-Answer the questions when prompted
+Answer the questions when prompted.
 
 ## Credits
+Node.js documentation: https://nodejs.org/dist/latest-v18.x/docs/api/
+NPM Inquirer Package: https://www.npmjs.com/package/inquirer
+Starter Code: https://github.com/coding-boot-camp/potential-enigma
+BCS class exercises on Node.js were referenced to help build the code for this project.
+License badges: https://gist.github.com/kofiav/c1059e1075b67582e86b07aa9759e20d
+
 
 ## License
   This project is licensed under the MIT License. 
   https://opensource.org/licenses/MIT
 
 ## Contributing
-N/A none at this time
+Create an issue in repo: https://github.com/milena-allaway/README_Generator/issues
 
 ## Tests
-N/A none at this time
+N/A none at this time.
 
 ## Questions
 For any questions or feedback, please contact me via:
