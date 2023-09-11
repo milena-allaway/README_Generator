@@ -19,6 +19,7 @@ Make sure Node.js is installed on your computer. Clone the repo with this file. 
 
 ## Usage
 Answer the questions when prompted.
+Watch the walkthrough: https://drive.google.com/file/d/1y-kis8GgObu17E1xTqMhliUhXmgysmjr/view
 
 ## Credits
 Node.js documentation: https://nodejs.org/dist/latest-v18.x/docs/api/
