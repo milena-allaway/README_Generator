@@ -19,14 +19,18 @@ Make sure Node.js is installed on your computer. Clone the repo with this file. 
 
 ## Usage
 Answer the questions when prompted.
-Watch the walkthrough: https://drive.google.com/file/d/1y-kis8GgObu17E1xTqMhliUhXmgysmjr/view
+[Watch the walkthrough](https://drive.google.com/file/d/1y-kis8GgObu17E1xTqMhliUhXmgysmjr/view)
 
 ## Credits
-Node.js documentation: https://nodejs.org/dist/latest-v18.x/docs/api/
-NPM Inquirer Package: https://www.npmjs.com/package/inquirer
-Starter Code: https://github.com/coding-boot-camp/potential-enigma
+Node.js documentation: 
+https://nodejs.org/dist/latest-v18.x/docs/api/
+NPM Inquirer Package: 
+https://www.npmjs.com/package/inquirer
+Starter Code: 
+https://github.com/coding-boot-camp/potential-enigma
 BCS class exercises on Node.js were referenced to help build the code for this project.
-License badges: https://gist.github.com/kofiav/c1059e1075b67582e86b07aa9759e20d
+License badges: 
+https://gist.github.com/kofiav/c1059e1075b67582e86b07aa9759e20d
 
 
 ## License
