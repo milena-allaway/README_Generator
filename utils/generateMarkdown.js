@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// A function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 //https://gist.github.com/kofiav/c1059e1075b67582e86b07aa9759e20d license badges codes for reference
 function renderLicenseBadge(license) {
@@ -31,7 +31,7 @@ function renderLicenseBadge(license) {
 
 };
 
-// TODO: Create a function that returns the license link
+// A function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch (license) {
@@ -63,7 +63,7 @@ function renderLicenseLink(license) {
       
 };
 
-// TODO: Create a function that returns the license section of README
+// A function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'None') {
@@ -75,7 +75,7 @@ function renderLicenseSection(license) {
   };
 };
 
-// TODO: Create a function to generate markdown for README
+// A function to generate markdown for README
 function generateMarkdown(data) {
 
   return `# ${data.title}
